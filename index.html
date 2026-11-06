@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#0f1115">
 <title>Rutina Upper/Lower 4 días</title>
 <meta name="description" content="Rutina Upper/Lower con modo focus, registro kg/lb, RIR, historial y temporizador.">
-<link rel="manifest" href="/manifest.json" />
-<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+<link rel="manifest" href="./manifest.json" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <meta name="apple-mobile-web-app-title" content="Rutina" />
@@ -1175,7 +1175,7 @@ if(state.settings.sid) acquireWake();
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('./sw.js')
         .then(reg => console.log('Service Worker registrado exitosamente'))
         .catch(err => console.error('Error al registrar Service Worker', err));
     });
